@@ -1,0 +1,83 @@
+//formularz kontakt
+.wpcf7 {
+	.form-control-wrapper {
+		margin-bottom: 24px;
+		input {
+			height: 46px !important;
+		}
+		input, textarea {
+			border: 1px solid @accent-color;
+			border-radius: 15px;
+			padding-left: 20px;
+			font-size: 18px;
+			background-color: @text-lightest;
+			.basic-transition;
+			&:focus {
+				border: 1px solid @accent-color;
+				box-shadow: 1px 1px 1px 1px @accent-color;
+				border-radius: 15px;
+				padding-left: 20px;
+				font-size: 18px;
+				background-color: @text-lightest;
+			}
+		}
+		textarea {
+			padding-top: 3px;
+		}
+		.floating-label {
+			.relative;
+			opacity:1;
+			font-size: 18px;
+			color: @text-dark;
+			padding-bottom:10px;
+		}
+	}
+}
+
+.wpcf7-form {
+	margin-top: 40px;
+}
+
+.card {
+	background-color: @card-color;
+	border-radius: 5px;
+}
+
+.card .entrycon  {
+		background-color: white;
+	}
+
+ol > li {
+	font-size: 18px;
+}
+
+//page-galeria
+.view-gallery .child-thumb {
+	.title_gallery {
+		font-size: 20px;
+		line-height: 1.6;
+		font-family: 'Mali', cursive;
+		color: @accent-color;
+	}
+}
+
+.view-gallery .child-thumb {
+		padding: 5px;
+		margin-bottom: 20px;
+		background-color: @text-lightest;
+		display: inline-block;
+	.title_gallery {
+		font-size: 20px;
+		line-height: 1.6;
+		font-family: 'Mali', cursive;
+		color: @accent-color;
+		@media @small{
+		font-size: 26px;
+		font-weight: bold;
+		font-family: 'Mali', cursive;
+		color: @accent-color;
+		}
+	}
+}
+
+

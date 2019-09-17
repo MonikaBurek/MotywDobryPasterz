@@ -1,0 +1,108 @@
+body .jumbotron {
+	margin:0;
+	padding: 10px 0;
+}
+
+.imgHolySpirit {
+	border:1px solid @accent-color;
+	padding: 10px;
+	display:none;
+	@media @large{
+		.block;
+	}
+}
+
+.imgJumbotron {
+	width: 90px;
+	@media @small{
+		width: 255px;	
+	}
+}
+
+.jumbotron h1 {
+	font-size: 30px;
+	color: @accent-color;
+	@media @medium{
+		font-size: 40px;
+	}
+	@media @large{
+		font-size: 50px;
+	}
+
+}
+
+.jumbotron h2 {
+	display:none;
+	font-size: 22px;
+	@media @medium{
+		font-size: 24px;
+		.block;
+	}
+	@media @large{
+		.block;
+		font-size: 28px;
+	}
+}
+
+.jumbotron h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	display:none;
+	@media @medium{
+		.block;
+	}
+	@media @large{
+		.block;
+		font-size: 20px;
+	}
+}
+
+
+
+.divImgSpirit {
+	padding-bottom: 0px;
+	@media @large{
+		padding-top: 50px;
+	}
+	 
+}
+
+.navbar-inverse.navbar {
+	background-color: @accent-color;
+	li {
+		font-size: 18px;
+		&:hover, &:focus, &:active {
+				.colors(#d55244; @text-lightest);
+			}
+	}
+	.navbar-header {
+		font-size: 20px;
+		font-weight: bold;
+	    font-family: 'Mali', cursive;
+	}
+	
+}
+
+.navbar-inverse.navbar .dropdown-menu>li>a {
+	background-color: @text-lightest;
+	color: @text-dark !important;
+	&:hover, &:focus, &:active {
+		background-color: #d55244;
+		color: @text-lightest;
+	}
+}
+
+.navbar-inverse.navbar .dropdown-menu .active>a {
+    background-color: #d55244;
+    color: rgba(255,255,255,.84);
+}
+.navbar-inverse.navbar .dropdown-menu .hover>a {
+    background-color: #d55244;
+    color: rgba(255,255,255,.84);
+}
+.navbar-inverse.navbar .dropdown-menu .focus>a {
+    background-color: #d55244;
+    color: rgba(255,255,255,.84);
+}
+
+

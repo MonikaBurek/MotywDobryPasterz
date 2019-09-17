@@ -1,0 +1,53 @@
+// Padding sekcji
+.section-padding {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	@media @small{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+
+.about-us {
+	background-color: @text-lightest;
+	border-bottom: 3px dashed @footer-main;
+	p:first-child { 
+		font-family: 'Mali', cursive;
+		font-weight: 700;
+		font-size: 24px;
+		color: @accent-color;
+		margin-bottom: 25px;
+		@media @large{
+			margin-bottom: 50px;
+		}
+	}
+	p:nth-child(2) {
+		margin-bottom: 20px;
+		@media @large{
+			margin-bottom: 35px;
+		}
+	}
+
+}
+
+.get-know-us-better {
+	background-color: @text-lightest;
+	border-bottom: 3px dashed @footer-main;
+	
+}
+
+.school-of-mercy {
+	border-bottom: 3px dashed @footer-main;
+	background-color: @text-lightest;
+	.wp-block-button__link {
+		border: 1px solid @accent-color;
+		color: @text-dark;
+		&:hover, &:focus, &:active {
+				.colors(@accent-color;@text-lightest);
+			}
+	}
+}
+
+.wp-block-button {
+	margin-top: 15px;
+}

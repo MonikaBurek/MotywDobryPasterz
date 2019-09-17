@@ -1,0 +1,47 @@
+article[class~="post"] {
+	margin-bottom: 60px;
+    .entry-title {
+    	font-size: 22px;
+    	font-weight: 300;
+    	padding-top: 10px;
+    	@media @small {
+    		font-size: 40px;
+    	}
+    }
+    //Naglowki
+	.entry-title a, .entry-header a {
+		color: @accent-color;
+		text-decoration: none;
+		.basic-transition;
+		&:hover {
+			color: @hover-color;
+			text-decoration: none;
+
+		}
+	}
+
+	//info o wpisie
+	.entry-meta * {
+		color: @text-gray;
+		font-size: 16px;
+		a {
+			color: @text-gray;
+			font-size: 16px;
+		}
+	}
+	.wp-block-button__link {
+		border: 1px solid @accent-color;
+		color: @text-dark;
+		font-family: 'Mali', cursive;
+		background-color: @text-lightest;
+		margin-top: 20px;
+		&:hover, &:focus, &:active {
+				.colors(@accent-color;@text-lightest);
+			}
+	}
+	.wp-block-image {
+		margin-top: 30px;
+	}
+}
+
+

@@ -1,0 +1,119 @@
+// Stopka ogone style
+
+.site-footer {
+	margin-top: 0;
+	a {
+		&:hover {
+			color: @hover-color;
+		}
+	}
+	padding: 40px 0 0;
+	.colors (@footer-main; @footer-text-color);
+	.footer-title {
+		color: @text-dark;
+		margin-top: 0;
+		line-height: 1.1;
+	}
+	.textwidget {
+		padding: 0;
+	}
+	ul {
+		.list-style-none;
+	}
+	aside {
+		margin-bottom: 20px;
+	}
+	.footer-widgets {
+		padding: 0 15px;
+	}
+
+
+}
+
+.footer-contact-item {
+	clear: both;
+	margin-bottom: 18px;
+	p {
+		font-size: 18px;
+		.inline-block;
+		color: @text-dark;
+		.padding-margin(0 0 6px; 0 0 0 20px);
+	}
+	h4 {
+		color: @text-dark;
+		font-size: 20px;
+		.padding-margin(0 ; 0 );
+	}
+
+}
+
+
+.footer-contact-item-icon {
+	float: left;
+	.basic-text(25px;25px);
+}
+
+.btn-useful-address {
+	color: @text-lightest !important;
+	text-transform: none;
+	font-size: 18px;
+	background-color: #028bca !important;
+	&:hover {
+			background-color: #01577e !important;
+			color:@text-lightest;
+		}
+}
+
+
+.widget #calendar_wrap {
+	padding: 0;
+	caption {
+		color:@text-dark;
+		padding-bottom: 12px;
+		font-size: 18px;
+		text-align: center;
+	}
+	td, th {
+		font-size: 18px;
+	}
+
+	a {
+		border: 2px solid @accent-color;
+		background-color: #ff1a1a;
+		border-radius: 5px;
+		&:hover {
+			background-color: #000066;
+			color: white;
+		}
+	}
+}
+
+.footer-title {
+	text-align: center;
+}
+
+// stopka dół
+.footer-bottom-row {
+	background-color: @footer-secondery;
+	padding: 25px 0;
+	color: @text-lightest;
+	font-family: 'Mali', cursive;
+	.site-info {
+		text-align: center;
+		font-size: 18px;
+	}
+	.site-realizacja {
+		text-align: right;
+		a {
+			color: @text-lightest;
+			opacity: 1;
+			&:hover {
+				background-color: #752d93;
+				color: white;
+				padding: 5px;
+				border-radius: 5px;
+				font-size: 16px;
+			}
+		}
+	}
+}
